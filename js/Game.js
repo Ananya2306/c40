@@ -94,12 +94,12 @@ class Game {
 
     drawSprites();
 
-    if(player.distance > 3860){
+    if(player.distance >= 3860){
     player.rank = player.rank+1;
     Player.updateCarsAtEnd(player.rank);
       gameState = 2;
       console.log(player.rank);
-      text("Your rank :" + this.rank , displayWidth/2-50,displayHeight/2-50);
+      text("Your rank :" + player.rank , displayWidth/2-50,displayHeight/2-50);
     }
    
     
